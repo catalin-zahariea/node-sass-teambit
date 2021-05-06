@@ -1,0 +1,48 @@
+// ===================
+// ===== MIXINS ======
+// ===================
+
+// -------------------
+// Font
+
+@mixin text-link {
+    color: $main-primary;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+// -------------------
+// Buttons
+
+@mixin btn-empty {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border:  1px solid $main-accent;
+    // Font
+    @include text-link;
+    color: $main-accent;
+}
+
+@mixin btn-empty-hover {
+    border:  1px solid $main-primary;
+    // Font
+    color: $main-primary;
+}
+
+@mixin btn-empty-active {
+    background-color: $main-accent;
+    // Font
+    color: #fff;
+}
+
+// -------------------
+// Links
+
+@mixin link-hover {
+    transform: scale(1.05);
+}
+
+@mixin link-active {
+    color: $main-secondary;
+}

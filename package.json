@@ -19,6 +19,8 @@
   "homepage": "https://github.com/catalin-zahariea/node-sass-teambit#readme",
   "devDependencies": {
     "laravel-mix": "^6.0.18",
-    "postcss": "^8.2.14"
+    "postcss": "^8.2.14",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1"
   }
 }

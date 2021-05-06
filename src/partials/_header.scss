@@ -1,0 +1,48 @@
+header {
+    .logo {
+        img {
+            width: 120px;
+        }
+    }
+    nav {
+        ul {
+            li {
+                padding: 0 10px;
+                
+                a {
+                    @include text-link;
+                    transition: all 0.2s;
+
+                    &:active {
+                        @include link-active;
+                    }
+                }
+
+                button {
+
+                    @include btn-empty;
+
+                    &:hover {
+                        @include btn-empty-hover;
+                    }
+
+                    &:active {
+                        @include btn-empty-active;
+                    }
+                    
+                    img {
+                        margin-right: 5px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        padding: 20px 0 10px 0;
+        border-bottom: 1px solid $main-primary;
+    }
+    .flex {
+        justify-content: space-between;
+    }
+}
