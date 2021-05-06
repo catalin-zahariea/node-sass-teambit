@@ -54,3 +54,46 @@
         }
     }
 }
+
+// -------------------
+// Process
+
+.process {
+    background-color: $main-secondary;
+    .container {
+
+        padding-top: 50px;
+
+        &:first-child {
+            padding-bottom: 50px;
+            border-bottom: 1px solid $main-primary;
+        }
+        
+        .section-title {
+            text-align: center;
+            @include text-section-title;
+
+            &:last-child {
+                padding-top: 50px
+            }
+        }
+
+        .images {
+
+            @include flex-space-between;
+
+            img {
+                width: auto;
+                height: 100px;
+            }
+        }
+
+        .big-image {
+            padding: 30px;
+            text-align: center;
+            img {
+                width: 30%;
+            }
+        }
+    }
+}

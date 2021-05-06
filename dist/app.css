@@ -146,3 +146,40 @@ header .flex {
   width: 50%;
   padding: 35px 0;
 }
+
+.process {
+  background-color: #FFE7D2;
+}
+.process .container {
+  padding-top: 50px;
+}
+.process .container:first-child {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #58402C;
+}
+.process .container .section-title {
+  text-align: center;
+  color: #58402C;
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+.process .container .section-title:last-child {
+  padding-top: 50px;
+}
+.process .container .images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.process .container .images img {
+  width: auto;
+  height: 100px;
+}
+.process .container .big-image {
+  padding: 30px;
+  text-align: center;
+}
+.process .container .big-image img {
+  width: 30%;
+}
