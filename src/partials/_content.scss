@@ -1,0 +1,56 @@
+// ===================
+// ===== CONTENT =====
+// ===================
+
+// -------------------
+// Jumbotron
+
+.jumbotron {
+    .container {
+        .flex {
+            // LEFT COL
+            .left-col {
+                @include col-half;
+                align-self: flex-start;
+
+                .subtitle {
+                    padding-top: 10px;
+                    @include text-body
+                }
+
+                .buttons {
+                    button {
+
+                        margin: 30px 0 15px 0;
+    
+                        @include btn-full;
+    
+                        &:hover {
+                            @include btn-full-hover;
+                        }
+    
+                        &:active {
+                            @include btn-full-active;
+                        }
+                    }
+
+                    span {
+                        @include text-caption;
+                        padding: 0 5px;
+                        vertical-align: super;
+                    }
+                }
+
+                .text-caption {
+                    @include text-caption
+                }
+            }
+            // RIGHT COL
+            .right-col {
+                @include col-half;
+
+
+            }
+        }
+    }
+}

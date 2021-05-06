@@ -11,6 +11,18 @@
     font-size: 14px;
 }
 
+@mixin text-body {
+    color: $main-primary;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@mixin text-caption {
+    color: $main-primary;
+    font-weight: 300;
+    font-size: 12px;
+}
+
 // -------------------
 // Buttons
 
@@ -22,6 +34,18 @@
     // Font
     @include text-link;
     color: $main-accent;
+
+    div {
+
+    display: flex;
+    align-items: center;
+
+        img {
+        width: 20px;
+        margin-right: 5px;
+        }
+    }
+    
 }
 
 @mixin btn-empty-hover {
@@ -36,6 +60,39 @@
     color: #fff;
 }
 
+@mixin btn-full {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: $main-accent;
+    border:  1px solid $main-accent;
+    // Font
+    @include text-link;
+    color: #fff;
+
+    div {
+
+        display: flex;
+        align-items: center;
+    
+            img {
+            width: 20px;
+            margin-right: 5px;
+            }
+        }
+}
+
+@mixin btn-full-hover {
+    border:  1px solid $main-primary;
+    // Font
+    color: $main-primary;
+}
+
+@mixin btn-full-active {
+    background-color: $main-accent;
+    // Font
+    color: #fff;
+}
+
 // -------------------
 // Links
 
@@ -45,4 +102,12 @@
 
 @mixin link-active {
     color: $main-secondary;
+}
+
+// -------------------
+// Columns
+
+@mixin col-half {
+    width: 50%;
+    padding: 35px 0;
 }

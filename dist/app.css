@@ -35,6 +35,12 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  color: #58402C;
+  font-size: 36px;
+  font-weight: 500;
+}
+
 header .logo img {
   width: 120px;
 }
@@ -60,6 +66,14 @@ header nav ul li button {
   font-size: 14px;
   color: #2E4790;
 }
+header nav ul li button div {
+  display: flex;
+  align-items: center;
+}
+header nav ul li button div img {
+  width: 20px;
+  margin-right: 5px;
+}
 header nav ul li button:hover {
   border: 1px solid #58402C;
   color: #58402C;
@@ -68,14 +82,65 @@ header nav ul li button:active {
   background-color: #2E4790;
   color: #fff;
 }
-header nav ul li button img {
-  margin-right: 5px;
-  width: 20px;
-}
 header .container {
   padding: 20px 0 10px 0;
   border-bottom: 1px solid #58402C;
 }
 header .flex {
   justify-content: space-between;
+}
+
+.jumbotron .container .flex .left-col {
+  width: 50%;
+  padding: 35px 0;
+  align-self: flex-start;
+}
+.jumbotron .container .flex .left-col .subtitle {
+  padding-top: 10px;
+  color: #58402C;
+  font-weight: 300;
+  font-size: 16px;
+}
+.jumbotron .container .flex .left-col .buttons button {
+  margin: 30px 0 15px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #2E4790;
+  border: 1px solid #2E4790;
+  color: #58402C;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.jumbotron .container .flex .left-col .buttons button div {
+  display: flex;
+  align-items: center;
+}
+.jumbotron .container .flex .left-col .buttons button div img {
+  width: 20px;
+  margin-right: 5px;
+}
+.jumbotron .container .flex .left-col .buttons button:hover {
+  border: 1px solid #58402C;
+  color: #58402C;
+}
+.jumbotron .container .flex .left-col .buttons button:active {
+  background-color: #2E4790;
+  color: #fff;
+}
+.jumbotron .container .flex .left-col .buttons span {
+  color: #58402C;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0 5px;
+  vertical-align: super;
+}
+.jumbotron .container .flex .left-col .text-caption {
+  color: #58402C;
+  font-weight: 300;
+  font-size: 12px;
+}
+.jumbotron .container .flex .right-col {
+  width: 50%;
+  padding: 35px 0;
 }

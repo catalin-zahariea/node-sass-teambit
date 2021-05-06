@@ -29,11 +29,6 @@ header {
                     &:active {
                         @include btn-empty-active;
                     }
-                    
-                    img {
-                        margin-right: 5px;
-                        width: 20px;
-                    }
                 }
             }
         }
