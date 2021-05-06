@@ -1,0 +1,61 @@
+// ===================
+// ===== FOOTER ======
+// ===================
+
+footer {
+    padding: 50px 0;
+    .container {
+        .flex {
+            
+            align-items: flex-start;
+
+            .footer-payoff {
+                width: 40%;
+                padding-right: 50px;
+
+                .flex {
+
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: 300;
+                    
+                    img {
+                        width: 120px;
+                        margin-right: 20px;
+                    }
+                }
+
+                a {
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: $main-accent;
+                }
+            }
+
+            .sub-menu {
+                width: calc(60% / 4);
+                padding: 0 10px;
+                
+                &:last-child {
+                    width: 20%;
+                }
+
+                &-title {
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                }
+
+                ul {
+                    li {
+                        display: block;
+                        padding-bottom: 10px;
+                        a {
+                            @include footer-link        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

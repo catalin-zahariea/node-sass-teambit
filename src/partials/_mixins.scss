@@ -105,11 +105,26 @@
 // Links
 
 @mixin link-hover {
-    transform: scale(1.05);
+    color: $main-accent;
+    font-weight: 500;
 }
 
 @mixin link-active {
     color: $main-secondary;
+    font-weight: 500;
+}
+
+@mixin footer-link {
+
+    @include text-caption;
+
+    &:hover {
+        @include link-hover;
+    }
+
+    &:active {
+        @include link-active;
+    }
 }
 
 // -------------------

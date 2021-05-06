@@ -56,6 +56,7 @@ header nav ul li a {
 }
 header nav ul li a:active {
   color: #FFE7D2;
+  font-weight: 500;
 }
 header nav ul li button {
   padding: 10px;
@@ -310,4 +311,58 @@ header .flex {
   font-weight: 300;
   font-size: 12px;
   text-align: center;
+}
+
+footer {
+  padding: 50px 0;
+}
+footer .container .flex {
+  align-items: flex-start;
+}
+footer .container .flex .footer-payoff {
+  width: 40%;
+  padding-right: 50px;
+}
+footer .container .flex .footer-payoff .flex {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+}
+footer .container .flex .footer-payoff .flex img {
+  width: 120px;
+  margin-right: 20px;
+}
+footer .container .flex .footer-payoff a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2E4790;
+}
+footer .container .flex .sub-menu {
+  width: calc(60% / 4);
+  padding: 0 10px;
+}
+footer .container .flex .sub-menu:last-child {
+  width: 20%;
+}
+footer .container .flex .sub-menu-title {
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+footer .container .flex .sub-menu ul li {
+  display: block;
+  padding-bottom: 10px;
+}
+footer .container .flex .sub-menu ul li a {
+  color: #58402C;
+  font-weight: 300;
+  font-size: 12px;
+}
+footer .container .flex .sub-menu ul li a:hover {
+  color: #2E4790;
+  font-weight: 500;
+}
+footer .container .flex .sub-menu ul li a:active {
+  color: #FFE7D2;
+  font-weight: 500;
 }
