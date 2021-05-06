@@ -171,10 +171,15 @@ header .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #58402C;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
 }
 .process .container .images img {
   width: auto;
   height: 100px;
+  padding-bottom: 20px;
 }
 .process .container .big-image {
   padding: 30px;
