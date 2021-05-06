@@ -107,6 +107,7 @@ header .flex {
   border-radius: 5px;
   background-color: #2E4790;
   border: 1px solid #2E4790;
+  transition: all 0.2s;
   color: #58402C;
   font-weight: 700;
   font-size: 14px;
@@ -121,12 +122,13 @@ header .flex {
   margin-right: 5px;
 }
 .jumbotron .container .flex .left-col .buttons button:hover {
-  border: 1px solid #58402C;
-  color: #58402C;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px 1px rgba(46, 71, 144, 0.2);
 }
 .jumbotron .container .flex .left-col .buttons button:active {
-  background-color: #2E4790;
-  color: #fff;
+  background-color: transparent;
+  border: 1px solid #2E4790;
+  color: #2E4790;
 }
 .jumbotron .container .flex .left-col .buttons span {
   color: #58402C;

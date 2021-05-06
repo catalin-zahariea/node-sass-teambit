@@ -65,6 +65,7 @@
     border-radius: 5px;
     background-color: $main-accent;
     border:  1px solid $main-accent;
+    transition: all 0.2s;
     // Font
     @include text-link;
     color: #fff;
@@ -82,15 +83,15 @@
 }
 
 @mixin btn-full-hover {
-    border:  1px solid $main-primary;
-    // Font
-    color: $main-primary;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px 1px rgba($color: $main-accent, $alpha: 0.2);
 }
 
 @mixin btn-full-active {
-    background-color: $main-accent;
+    background-color: transparent;
+    border:  1px solid $main-accent;
     // Font
-    color: #fff;
+    color: $main-accent;
 }
 
 // -------------------
