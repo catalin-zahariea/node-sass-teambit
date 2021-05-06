@@ -100,3 +100,50 @@
         }
     }
 }
+
+// -------------------
+// Interface
+
+.interface {
+    .container {
+
+        padding: 50px 0;
+
+        // LEFT SUB-SECTIONS
+        &:nth-child(2n + 1) {
+            margin-left: 2.5%;
+        }
+
+        // RIGHT SUB-SECTIONS
+        &:nth-child(1n + 2) {
+            margin-right: 2.5%;
+        }
+
+        .sub-section {
+
+            @include flex-space-between;
+            align-items: flex-start;
+
+            &-big-image {
+                width: 70%;
+            }
+            &-info {
+                width: 30%;
+            }
+            &-title {
+                @include text-section-title;
+            }
+            &-description {
+                padding: 20px 0;
+                @include text-body;
+            }
+            &-link {
+                padding: 10px 0 30px 0;
+                @include text-body;
+                color: $main-accent;
+            }
+            
+        }
+        
+    }
+}

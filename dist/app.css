@@ -188,3 +188,44 @@ header .flex {
 .process .container .big-image img {
   width: 30%;
 }
+
+.interface .container {
+  padding: 50px 0;
+}
+.interface .container:nth-child(2n+1) {
+  margin-left: 2.5%;
+}
+.interface .container:nth-child(1n+2) {
+  margin-right: 2.5%;
+}
+.interface .container .sub-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.interface .container .sub-section-big-image {
+  width: 70%;
+}
+.interface .container .sub-section-info {
+  width: 30%;
+}
+.interface .container .sub-section-title {
+  color: #58402C;
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+.interface .container .sub-section-description {
+  padding: 20px 0;
+  color: #58402C;
+  font-weight: 300;
+  font-size: 16px;
+}
+.interface .container .sub-section-link {
+  padding: 10px 0 30px 0;
+  color: #58402C;
+  font-weight: 300;
+  font-size: 16px;
+  color: #2E4790;
+}
