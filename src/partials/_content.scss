@@ -147,3 +147,78 @@
         
     }
 }
+
+// -------------------
+// Get Started
+
+.get-started {
+    background-color: $main-secondary;
+    text-align: center;
+    padding: 50px 0;
+
+    .testimonial {
+        border-radius: 10px;
+        border: 1px solid $main-accent;
+        padding: 30px;
+        width: 70%;
+        margin: 50px auto;
+        text-align: left;
+        background-color: #fff;
+
+        &-text {
+
+            @include text-body;
+
+            p {
+                padding-bottom: 20px
+            }
+
+            &>div {
+                @include flex-space-between;
+                justify-content: flex-start;
+            }
+
+            &-avatar {
+                width: 70px;
+                padding-right: 20px;
+            }
+
+            &-signature {
+                & div:first-child {
+                    color: $main-accent;
+                }
+                & div:last-child {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .buttons {
+        button {
+
+            margin: 10px 0 15px 0;
+
+            @include btn-full;
+
+            &:hover {
+                @include btn-full-hover;
+            }
+
+            &:active {
+                @include btn-full-active;
+            }
+        }
+
+        span {
+            @include text-caption;
+            padding: 0 5px;
+            vertical-align: super;
+        }
+    }
+
+    .text-caption {
+        @include text-caption;
+        text-align: center;
+    }
+}

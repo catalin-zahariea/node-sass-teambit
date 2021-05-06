@@ -35,10 +35,11 @@ body {
   font-family: sans-serif;
 }
 
-h1 {
+.main-title {
   color: #58402C;
   font-size: 36px;
   font-weight: 500;
+  line-height: 72px;
 }
 
 header .logo img {
@@ -228,4 +229,85 @@ header .flex {
   font-weight: 300;
   font-size: 16px;
   color: #2E4790;
+}
+
+.get-started {
+  background-color: #FFE7D2;
+  text-align: center;
+  padding: 50px 0;
+}
+.get-started .testimonial {
+  border-radius: 10px;
+  border: 1px solid #2E4790;
+  padding: 30px;
+  width: 70%;
+  margin: 50px auto;
+  text-align: left;
+  background-color: #fff;
+}
+.get-started .testimonial-text {
+  color: #58402C;
+  font-weight: 300;
+  font-size: 16px;
+}
+.get-started .testimonial-text p {
+  padding-bottom: 20px;
+}
+.get-started .testimonial-text > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-start;
+}
+.get-started .testimonial-text-avatar {
+  width: 70px;
+  padding-right: 20px;
+}
+.get-started .testimonial-text-signature div:first-child {
+  color: #2E4790;
+}
+.get-started .testimonial-text-signature div:last-child {
+  font-size: 14px;
+}
+.get-started .buttons button {
+  margin: 10px 0 15px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #2E4790;
+  border: 1px solid #2E4790;
+  transition: all 0.2s;
+  color: #58402C;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.get-started .buttons button div {
+  display: flex;
+  align-items: center;
+}
+.get-started .buttons button div img {
+  width: 20px;
+  margin-right: 5px;
+}
+.get-started .buttons button:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px 1px rgba(46, 71, 144, 0.2);
+}
+.get-started .buttons button:active {
+  background-color: transparent;
+  border: 1px solid #2E4790;
+  color: #2E4790;
+}
+.get-started .buttons span {
+  color: #58402C;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0 5px;
+  vertical-align: super;
+}
+.get-started .text-caption {
+  color: #58402C;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
 }
